@@ -1,6 +1,8 @@
-/* Custom Wiki Styling */
-body {
+html, body {
     background-color: white !important;
 }
 
-/* Optionally, you can add more custom styles here */
+/* Target specific GitHub wiki elements */
+.markdown-body {
+    background-color: white !important;
+}
