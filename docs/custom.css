@@ -1,8 +1,18 @@
+/* Force white background for all GitHub themes (dark, light, etc.) */
 html, body {
+    background-color: white !important;
+    color: black !important; /* Optional: force black text to ensure readability */
+}
+
+/* Ensure specific elements have white backgrounds as well */
+.markdown-body {
     background-color: white !important;
 }
 
-/* Target specific GitHub wiki elements */
-.markdown-body {
-    background-color: white !important;
+/* Override GitHub's dark mode theme for specific elements */
+@media (prefers-color-scheme: dark) {
+    html, body, .markdown-body {
+        background-color: white !important;
+        color: black !important;
+    }
 }
